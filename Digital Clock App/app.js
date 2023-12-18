@@ -1,7 +1,7 @@
 function update_Clock() {
 
-	const now = new Date();
-	const dayname = now.getDay(),
+	let now = new Date();
+	let dayname = now.getDay(),
 		month = now.getMonth(),
 		date = now.getDate(),
 		year = now.getFullYear(),
@@ -10,8 +10,9 @@ function update_Clock() {
 		sec = now.getSeconds(),
 		period = "AM";
 
-	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "September" , "November", "December"]
-	const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+	let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "September" , "November", "December"]
+	let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
 
 	if (hours == 0)
 		hours = 12;
